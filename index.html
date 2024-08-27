@@ -5,70 +5,106 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Download Reach Out World App</title>
     <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            margin: auto;
-            padding: auto;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
-            background-color: #FFD700; /* Bright yellow background */
+            min-height: 100vh;
+            background-color: #FFD700;
+            padding: 20px;
         }
+
         .app-container {
             background-color: white;
             border-radius: 10px;
             padding: 30px;
             text-align: center;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 100%;
             max-width: 400px;
-            width: 100% auto;
         }
+
         h1 {
             color: #333;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 24px;
         }
+
         p {
             color: #666;
             margin-bottom: 20px;
+            font-size: 16px;
         }
+
         .logo {
             width: 100px;
             height: 100px;
             margin-bottom: 20px;
+            max-width: 100%;
+            height: auto;
         }
+
         .download-btn {
             background-color: #FFD700;
             color: #333;
-            padding: 10px 20px;
+            padding: 12px 24px;
             text-decoration: none;
             border-radius: 5px;
             display: inline-block;
             font-weight: bold;
             transition: background-color 0.3s;
+            font-size: 18px;
         }
+
         .download-btn:hover {
             background-color: #FFC000;
         }
+
         .app-store-links {
-            margin-top: 15px;
+            margin-top: 20px;
             font-size: 14px;
             color: #666;
         }
+
         .app-store-links a {
             color: #007bff;
             text-decoration: none;
             margin: 0 5px;
         }
+
+        @media (max-width: 480px) {
+            .app-container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            p {
+                font-size: 14px;
+            }
+
+            .download-btn {
+                padding: 10px 20px;
+                font-size: 16px;
+            }
+        }
     </style>
 </head>
 <body>
     <div class="app-container">
-        <img src="reachout_logo.png" alt="Reach Out World Logo" class="logo">
+        <img src="path_to_logo.png" alt="Reach Out World Logo" class="logo">
         <h1>Download Reach Out World App</h1>
-
         <p>Get started by downloading our app today!</p>
         <a href="#" class="download-btn">Download Now</a>
         <p class="app-store-links">
